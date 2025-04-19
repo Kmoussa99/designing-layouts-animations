@@ -11,27 +11,30 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
-    //for ios Application
-    // return const CupertinoApp(
-    //   theme: CupertinoThemeData(
-    //     primaryColor: CupertinoColors.activeBlue,
-    //     barBackgroundColor: CupertinoColors.activeBlue,
-    //     brightness: Brightness.light
-    //   ),
-    //   home : CupertinoPageScaffold(
-    //       navigationBar: CupertinoNavigationBar(
-    //         middle: Text('hello World'),
-    //       ),
-    //       child: Center(child: Text('Hello World !!!'),))
-    // );
-
-    return  MaterialApp(
+    return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      //to delete the debug banner
+      theme: ThemeData(
+        primarySwatch: Colors.red,
+        appBarTheme: const AppBarTheme(
+          backgroundColor: Colors.red,
+        ),
+      ),
+      darkTheme: ThemeData(
+          primarySwatch: Colors.green,
+          brightness: Brightness.dark,
+          appBarTheme: const AppBarTheme(
+            backgroundColor: Colors.green,
+          )
+      ),
+      themeMode: ThemeMode.dark,
       home: Scaffold(
-        appBar:  AppBar( // <-- corrigé ici
+        appBar: AppBar( // <-- corrigé ici
           title: Text('MyApp'), // pas besoin de const ici non plus
         ),
         body: Center(
-          child: Text('Hello World'),
+          // child: Text('Hello World'),
+          child: Switch.adaptive(value: true, onChanged: print),
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
@@ -47,7 +50,7 @@ class MyApp extends StatelessWidget {
         ),
       ),
     );
-
-
   }
 }
+
+
