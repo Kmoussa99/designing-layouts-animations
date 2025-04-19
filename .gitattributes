@@ -1,18 +1,26 @@
-# Ignore les fichiers natifs non Dart
+# Ignorer tous les fichiers natifs
 android/** linguist-vendored
 ios/** linguist-vendored
+linux/** linguist-vendored
 macos/** linguist-vendored
 windows/** linguist-vendored
-linux/** linguist-vendored
 
-# Ignore les fichiers CMake, C++, Objective-C, etc.
+# Ignorer les fichiers de build ou auto-générés
+build/** linguist-vendored
+
+# Ignorer tous les fichiers CMake et similaires
+*.cmake linguist-vendored
+CMakeLists.txt linguist-vendored
+
+# Ignorer les fichiers C/C++
 *.cpp linguist-vendored
 *.h linguist-vendored
 *.c linguist-vendored
 *.cc linguist-vendored
-*.cmake linguist-vendored
+
+# Ignorer Objective-C
 *.m linguist-vendored
 *.mm linguist-vendored
 
-# Forcer Dart comme langage principal si besoin
+# Forcer Dart à être reconnu
 *.dart linguist-language=Dart
