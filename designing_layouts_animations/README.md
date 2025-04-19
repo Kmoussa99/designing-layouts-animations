@@ -1,3 +1,60 @@
+# designing_layouts_animations
+
+project to apply pluralsight design and animation course
+
+## Getting Started
+
+This project is a starting point for a Flutter application.
+
+A few resources to get you started if this is your first Flutter project:
+
+- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
+- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+
+For help getting started with Flutter development, view the
+[online documentation](https://docs.flutter.dev/), which offers tutorials,
+samples, guidance on mobile development, and a full API reference.
+
+
+MaterialApp for android <br>
+CupertinoApp for ios <br>
+NonMaterialApp for something more hybrid <br>
+
+Scaffold is principal page component for MaterialApp <br>
+CupertinoPageScaffold is principal page component for ios <br>
+
+Text, RichText and DefaultTextStyle to write text in container or in widget <br>
+
+How we manage column width? <br>
+
+Main Axis is the length (on the abscissa) <br>
+Cross Axis is the width(on the ordinate) <br>
+
+How we manage Row width?
+
+Cross Axis is the length (on the abscissa) <br>
+Main Axis is the width (on the ordinate) <br>
+
+Layout Techniques and image Integration 
+Stack perfect for scenarios when you need to overlapping(chevaucher,superposer) element and fix alignment and size <br>
+Padding helps you to add space around and inside widget <br>
+Container it allows you to customize its look and feel of the conntain (We can use BoxDecorator)<br>
+
+Scrolling Widgets: Top Options
+listview: Pour gérer le scroll de haut en bas , you can also define the scroll direction 
+GridView: plus pour la gestion du scroll en forme de grille
+
+using images in Flutter: You can use /assets in pubspec.yaml
+
+for screen Space we have two options :  
+
+MediaQuery.sizeOf is more general 
+LayoutBuilder in more presize and you can adapt it to something 
+to have your code more cleaner you can have a Responsive manager
+and there you can define what do you want for each environment(tablet,mobile)
+
+Don't forget SafeArea to avoid page bad layout
+
 
 # 🎨 Flutter Layouts & Animations Playground
 
