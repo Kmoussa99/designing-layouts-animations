@@ -55,6 +55,27 @@ and there you can define what do you want for each environment(tablet,mobile)
 
 Don't forget SafeArea to avoid page bad layout
 
+Animation: Various styles
+transitions: implicit,explicit <br>
+Built-in implicit animations : AnimatedAlign,AnimatedContainer,Animatedscale,AnimatedRotation,Animatedslide,AnimatedOpacity,Animatedpadding
+Built-in explicit animations : Aligntransition, FadeAnimation, Positionedtransition, Rotationtransition, SizeTransition, Sizetransition
+Hero animation between two page when you click for another page
+stagered animations 
+loading
+Hover effects
+
+transition you can use transition builder
+
+
+
+
+
+
+
+
+
+
+
 
 # 🎨 Flutter Layouts & Animations Playground
 
